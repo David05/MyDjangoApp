@@ -1,10 +1,36 @@
-<h1>Hi all you are at the poll index</h1>
-{% if poll_list %}
-     <ul>
-         {% for poll in poll_list %}
-         <li>a href="{% url polls.views.detail poll_id=poll.id %}"></a></li>
-         {% endfor %}
-     </ul>
-{ % else %}
-<p> No polls available</p>
-{% endif %}
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Inicio de Sesion</title>
+    </head>
+    <body  >
+        <form action="./autenticacion" method="post" >
+            <table width="289" border="2" align="center"  >
+                <br><br><br><br><br><br><br>
+                <Marquee scrollAmount="6"  ><font color="blue"> Bienvenidos al Sistema </Marquee>
+                <tr bgcolor="E0FFFF" style="color: #FFFFFF; font-weight: bold; ">
+                    <td colspan="2" align="center" ><font color="blue"><h1>Login</h1></td>
+                </tr>
+                    <tr>
+                        <td> <font color="blue"> Usuario  :</font></td><td> <input name="username" size=15 type="text" align="center" /> </td>
+                    </tr>
+                    <tr>
+                        <td><font color="blue">  ContraseÃ±a  :</font></td><td> <input name="password" size=15 type="password" align="center" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Iniciar Sesion" align="center" style="background:cyan"/>
+
+                    </tr>
+                    <br><br>
+                    <tr>
+                </tr>
+                </table>
+            <br>
+            <br>
+</head>
+            </form>
+    </body>
+</html>

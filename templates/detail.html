@@ -1,10 +1,24 @@
-<h1>Hi all you are at the detail page</h1>
-{% if poll_list %}
-     <ul>
-         {% for choice in poll.choice_set.all %}
-         <li>{{choice.choice  }}"</li>
-         {% endfor %}
-     </ul>
-{ % else %}
-<p> No details available</p>
-{% endif %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+    <title>Dj Pycharm</title>
+
+</head>
+	<body>
+
+<h1> Python Django Pycharm </h1>
+</br>
+
+{% for valores in valor %}
+
+    <tr>
+        <td>{{valores.question}}</td></br>
+    </tr>
+
+{% endfor %}
+
+        </div>
+	</body>
+</html>
