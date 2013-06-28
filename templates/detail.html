@@ -1,0 +1,10 @@
+<h1>Hi all you are at the detail page</h1>
+{% if poll_list %}
+     <ul>
+         {% for choice in poll.choice_set.all %}
+         <li>{{choice.choice  }}"</li>
+         {% endfor %}
+     </ul>
+{ % else %}
+<p> No details available</p>
+{% endif %}
