@@ -14,10 +14,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.oracle', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'XE',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'diseno',
-        'PASSWORD': 'diseno',
-        'HOST': '190.7.192.3',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '1522',                      # Set to empty string for default.
+        'USER': 'Oracle',
+        'PASSWORD': 'progra',
+        'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '1521',                      # Set to empty string for default.
     }
 }
 
