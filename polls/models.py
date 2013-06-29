@@ -5,7 +5,7 @@ class Categoriasxproducto(models.Model):
     def __unicode__(self):
         return self.Descripcion
 
-class Usuarios(models.Model):
+class Usuario(models.Model):
     Idusuario=models.CharField(max_length=200)
     nombre=models.CharField(max_length=200)
     apellido=models.CharField(max_length=200)

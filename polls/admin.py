@@ -1,4 +1,4 @@
-from polls.models import Categoriasxproducto,Usuarios
+from polls.models import Categoriasxproducto,Usuario
 from django.contrib import admin
 
 class CategoriasxproductoAdmin(admin.ModelAdmin):
@@ -10,7 +10,7 @@ class CategoriasxproductoAdmin(admin.ModelAdmin):
 
 admin.site.register(Categoriasxproducto)
 
-class UsuariosAdmin(admin.ModelAdmin):
+class UsuarioAdmin(admin.ModelAdmin):
     fieldsets = [
         (None,               {'fields': ['Idusuario']}),
         (None,               {'fields': ['nombre']}),
@@ -23,7 +23,7 @@ class UsuariosAdmin(admin.ModelAdmin):
     list_display = ('Idusuario,nombre,apellido,fechanacimiento,direccion,contrasena')
     list_display_links =('Idusuario,nombre,apellido,fechanacimiento,direccion,contrasena')
 
-admin.site.register(Usuarios)
+admin.site.register(Usuario)
 
 
 
