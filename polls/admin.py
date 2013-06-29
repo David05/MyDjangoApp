@@ -1,4 +1,4 @@
-from polls.models import Categoriasxproducto,Usuario
+from polls.models import Categoriasxproducto,Usuario,Producto
 from django.contrib import admin
 
 class CategoriasxproductoAdmin(admin.ModelAdmin):
@@ -25,6 +25,7 @@ class UsuarioAdmin(admin.ModelAdmin):
 
 admin.site.register(Usuario)
 
+admin.site.register(Producto)
 
 
 

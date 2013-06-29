@@ -15,6 +15,20 @@ class Usuario(models.Model):
     def __unicode__(self):
         return self.nombre
 
+class Producto(models.Model):
+
+    Codigo=models.CharField(max_length=200)
+    Descripcion=models.CharField(max_length=200)
+    Precio=models.IntegerField()
+    Cantidad_actual=models.IntegerField()
+    Imagen= models.ImageField(upload_to="C:/Users/cococo/PycharmProjects/MyDjangoApp/MyDjangoApp/")
+    Cod_categoria_id=models.ForeignKey(Categoriasxproducto)
+    def __unicode__(self):
+        return self.Descripcion
+
+
+
+
 
 
 
