@@ -14,10 +14,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.oracle', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'XE',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'Oracle',
-        'PASSWORD': 'progra',
-        'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '1521',                      # Set to empty string for default.
+        'USER': 'EXAMENDI',
+        'PASSWORD': 'hola6328',
+        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '',                      # Set to empty string for default.
     }
 }
 
@@ -50,12 +50,12 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = 'C:/Users/cococo/PycharmProjects/MyDjangoApp/MyDjangoApp/'
+MEDIA_ROOT = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = 'C:/Users/cococo/PycharmProjects/MyDjangoApp/MyDjangoApp/'
+MEDIA_URL = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -109,7 +109,7 @@ WSGI_APPLICATION = 'MyDjangoApp.wsgi.application'
 
 import os
 #TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),)
-TEMPLATE_DIRS=('C:/Users/cococo/PycharmProjects/MyDjangoApp/templates')
+TEMPLATE_DIRS=('C:/Users/torres/PycharmProjects/MyDjangoApp/templates')
 
 INSTALLED_APPS = (
     'django.contrib.auth',

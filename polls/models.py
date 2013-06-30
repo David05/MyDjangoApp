@@ -1,5 +1,5 @@
 from django.db import models
-
+#el polls es el app puedo tener n cantidad de app
 class Categoriasxproducto(models.Model):
     Descripcion= models.CharField(max_length=200)
     def __unicode__(self):
@@ -21,7 +21,7 @@ class Producto(models.Model):
     Descripcion=models.CharField(max_length=200)
     Precio=models.IntegerField()
     Cantidad_actual=models.IntegerField()
-    Imagen= models.ImageField(upload_to="C:/Users/cococo/PycharmProjects/MyDjangoApp/MyDjangoApp/")
+    Imagen= models.ImageField(upload_to="C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/", null=True, blank=True)
     Cod_categoria_id=models.ForeignKey(Categoriasxproducto)
     def __unicode__(self):
         return self.Descripcion
