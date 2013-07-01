@@ -26,6 +26,13 @@ class Producto(models.Model):
     def __unicode__(self):
         return self.Descripcion
 
+class prueba(models.Model):
+    nombre = models.CharField(max_length=200)
+    Descripcion = models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return self.nombre
+
 
 
 

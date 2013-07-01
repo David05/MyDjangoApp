@@ -6,10 +6,31 @@ from polls import models
 from polls.models import Producto
 from polls.forms import ClienteForm
 from django.core.mail import EmailMultiAlternatives
+from polls.forms import addProductos
+from polls.models import prueba
 
 
 def add_producto_view(request):
-    return render_to_response('addProducto.html', context_instance=RequestContext(request))
+    if request.method=="POST":
+        form = addProductos(request.POST)
+        info = "Inicializado"
+        if form.is_valid():
+            nombre = form.cleaned_data['nombre']
+            descripcion = form.cleaned_data['descripcion']
+            p= prueba()
+            p.nombre = nombre
+            p.Descripcion = descripcion
+            p.save() #Guardo la info
+            info = "Se guardo los datos correctamente"
+        else:  #no es valida
+            info = "Informacion con datos erroneos"
+        form = addProductos()
+        ctx = {'form':form,'informacion':info }
+        return render_to_response('addProducto.html',ctx, context_instance=RequestContext(request))
+    else: #GET
+        form = addProductos
+        ctx = {'form':form}
+        return render_to_response('addProducto.html',ctx, context_instance=RequestContext(request))
 
 def index(request):
     lista_personas = models.Producto.objects.all()
@@ -44,13 +65,6 @@ def Contatcto_view(request):
 
         else:
             formulario = ClienteForm()
-
-
-
     formulario = ClienteForm()
     ctx = {'form':formulario,'email':email,'titulo':titulo,'texto':texto,'info_enviada':info_envianda}
     return render_to_response('cliente.html',ctx,context_instance=RequestContext(request))
-
-
-
-
