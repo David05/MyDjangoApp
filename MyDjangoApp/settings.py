@@ -1,10 +1,11 @@
 # Django settings for MyDjangoApp project.
+import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('David', 'mongedavid05@gmail.com'),
+     ('Fernando', 'lusifertorresSS@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -51,11 +52,13 @@ USE_TZ = True
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
 MEDIA_ROOT = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/'
+#MEDIA_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__),'media/'))
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/'
+#MEDIA_URL = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/media/'
+MEDIA_URL = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -153,3 +156,11 @@ LOGGING = {
         },
     }
 }
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'lusifertorresSS@gmail.com'
+EMAIL_HOST_PASSWORD ='religion=6328'
+EMAIL_SUBJECT_PREFIX = 'something'
+EMAIL_USE_TLS = True
