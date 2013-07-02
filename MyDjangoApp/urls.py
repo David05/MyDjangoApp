@@ -14,4 +14,5 @@ urlpatterns = patterns('',
     url(r'^inicial/','polls.views.index',name="index"),
     url(r'^ver_productos/','polls.views.producto_view',name="ver_productos"),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^media/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.MEDIA_ROOT}),
 )

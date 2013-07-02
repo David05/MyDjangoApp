@@ -60,7 +60,7 @@ def Contatcto_view(request):
             titulo = formulario.cleaned_data['Titulo']
             texto = formulario.cleaned_data['Texto']
 
-            to_admin = 'lusifertorresSS@gmail.com'
+            to_admin = 'mongedavid05@gmail.com'
             html_content = "Informacion recibida de [%s] <br> <br> <br> **** Mensaje **** <br><br> %s"%(email,texto)
             msg = EmailMultiAlternatives('Correo de Contacto',html_content,'from@server.com', [to_admin])
             msg.attach_alternative(html_content,'text/html')
