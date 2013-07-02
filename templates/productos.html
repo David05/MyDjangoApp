@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Ver Productos{% endblock %}
+{% block content %}
+{% if productos %}
+    {% for p in productos %}
+        <p> {{p.Codigo}}</p>
+        <p> {{p.Descripcion}}</p>
+        <p> {{p.Precio}}</p>
+        <p> {{p.Cantidad_actual}}</p>
+        <p> {{p.Cod_categoria_id}}</p>
+        <img src="/media/{{p.Imagen}}"> </p>
+    {% endfor %}
+{% else %}
+    <h2> No hay productos con esa descripcion</h2>
+
+
+{% endif %}
+
+{% endblock %}

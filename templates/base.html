@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %} Titulo principal{% endblock %}</title>
+</head>
+<body>
+<Header>
+
+    <h1>Ventas en linea(ebay)</h1>
+    <img src="/media/image/django.jpg">
+    <nav>
+        <a href="{% url 'index' %}">Inicio</a>
+        <a href="{% url 'ver_productos' %}">Productos</a>
+        <a href="{% url 'contactos' %}">Cliente</a>
+        <a href="{% url 'addproductos' %}">Agregar Producto</a>
+
+    </nav>
+</header>
+<section>
+        {% block content %}
+        {% endblock %}
+
+</section>
+
+
+</body>
+</html>
