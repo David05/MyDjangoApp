@@ -14,10 +14,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.oracle', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'XE',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'Oracle',
+        'USER': 'oracle',
         'PASSWORD': 'progra',
-        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'PORT': '',                      # Set to empty string for default.
+        'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '1521',                      # Set to empty string for default.
     }
 }
 
@@ -110,7 +110,7 @@ WSGI_APPLICATION = 'MyDjangoApp.wsgi.application'
 
 import os
 #TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),)
-TEMPLATE_DIRS=('C:/Users/cococo/PycharmProjects/MyDjangoApp/templates')
+TEMPLATE_DIRS=('C:/Users/godie44.DEVELOPMENT/Downloads/Microsoft.SkypeApp_kzf8qxf38zg5c!App/MyDjangoApp/templates')
 
 INSTALLED_APPS = (
     'django.contrib.auth',
