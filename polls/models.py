@@ -21,7 +21,7 @@ class Producto(models.Model):
     Descripcion=models.CharField(max_length=200)
     Precio=models.IntegerField()
     Cantidad_actual=models.IntegerField()
-    Imagen= models.ImageField(upload_to="C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/", null=True, blank=True)
+    Imagen= models.ImageField(upload_to="os.path.normpath(os.path.join(os.path.dirname(__file__),'media/'))", null=True, blank=True)
     Cod_categoria_id=models.ForeignKey(Categoriasxproducto)
     def __unicode__(self):
         return self.Descripcion

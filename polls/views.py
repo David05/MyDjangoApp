@@ -39,7 +39,7 @@ def index(request):
     return HttpResponse(tmpl.render(contexto))
 
 def producto_view(request):
-    prod = Producto.objects.filter(Precio=125000)
+    prod = Producto.objects.filter(Codigo=1)
     ctx = {'productos':prod}
     return render_to_response('productos.html',ctx,context_instance=RequestContext(request))
 
