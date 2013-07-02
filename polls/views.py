@@ -43,6 +43,9 @@ def producto_view(request):
     ctx = {'productos':prod}
     return render_to_response('productos.html',ctx,context_instance=RequestContext(request))
 
+def menu_view(request):
+    return render_to_response('base.html',context_instance=RequestContext(request))
+
 def Contatcto_view(request):
     info_envianda = False
     email = ""

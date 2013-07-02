@@ -1,11 +1,10 @@
 # Django settings for MyDjangoApp project.
-import os
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-     ('Fernando', 'lusifertorresSS@gmail.com'),
+     ('David', 'mongedavid05@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -15,8 +14,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.oracle', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'XE',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': 'EXAMENDI',
-        'PASSWORD': 'hola6328',
+        'USER': 'Oracle',
+        'PASSWORD': 'progra',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
@@ -51,14 +50,14 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/'
+MEDIA_ROOT = 'C:/Users/cococo/PycharmProjects/MyDjangoApp/MyDjangoApp/'
 #MEDIA_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__),'media/'))
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
 #MEDIA_URL = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/media/'
-MEDIA_URL = 'C:/Users/torres/PycharmProjects/MyDjangoApp/MyDjangoApp/media/'
+MEDIA_URL = 'C:/Users/cococo/PycharmProjects/MyDjangoApp/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -112,7 +111,7 @@ WSGI_APPLICATION = 'MyDjangoApp.wsgi.application'
 
 import os
 #TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), '..', 'templates').replace('\\','/'),)
-TEMPLATE_DIRS=('C:/Users/torres/PycharmProjects/MyDjangoApp/templates')
+TEMPLATE_DIRS=('C:/Users/cococo/PycharmProjects/MyDjangoApp/templates')
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -160,7 +159,7 @@ LOGGING = {
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'lusifertorresSS@gmail.com'
-EMAIL_HOST_PASSWORD ='religion=6328'
+EMAIL_HOST_USER = 'mongedavid05@gmail.com'
+EMAIL_HOST_PASSWORD ='0510davprogra2'
 EMAIL_SUBJECT_PREFIX = 'something'
 EMAIL_USE_TLS = True

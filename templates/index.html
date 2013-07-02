@@ -1,12 +1,7 @@
 
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Inicio de Sesion</title>
-    </head>
-    <body BGCOLOR="#E6E6FA">
+{% extends 'base.html' %}
+{% block title %} Inicio - Bienvenidos {% endblock %}
+{% block content %}
      {{ Productos.Imagen }}
             <table width="289" border="2" align="center"  >
                 <br><br><br><br><br><br><br>
@@ -31,7 +26,4 @@
             <br>
 
             <br>
-</head>
-            </form>
-    </body>
-</html>
+{% endblock %}
